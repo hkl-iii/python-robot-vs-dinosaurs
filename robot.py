@@ -5,8 +5,10 @@ class Robot:
         self.power_level = ''
         self.weapon = ''
 
+    def attack_with_weapon(self, player_loses_health_pts):
+        self.weapon.attack = player_loses_health_pts.weapon.attack
+        player_loses_health_pts.weapon.attack = self.receive_attack()
 
-class Weapon:
-    def __init__(self):
-        self.type = ''
-        self.attack_power = ''
+    def receive_attack(self):
+        print('OUCH!')
+        return 'has been hit'
