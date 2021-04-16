@@ -1,5 +1,7 @@
 from dinosaur import Dinosaur
-class herd:
+
+
+class Herd:
     def __init__(self):
         dinosaur_1 = Dinosaur()
         dinosaur_1.type = 'Indominus-Rex'
@@ -18,4 +20,3 @@ class herd:
         dinosaur_3.health = 150
         dinosaur_3.energy = 150
         dinosaur_3.attack_power = 25
-
