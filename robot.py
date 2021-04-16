@@ -1,14 +1,15 @@
+from weapon import Weapon
+
+
 class Robot:
     def __init__(self):
         self.name = ''
         self.health = ''
         self.power_level = ''
-        self.weapon = ''
+        self.weapon = Weapon()
 
-    def attack_with_weapon(self, player_loses_health_pts):
-        self.weapon.attack = player_loses_health_pts.weapon.attack
-        player_loses_health_pts.weapon.attack = self.receive_attack()
+    def attack_with_weapon(self, dinosaur):
+        dinosaur.health -= self.weapon.attack_power
+        print(self.name + ' attacked' + dinosaur.name)
 
-    def receive_attack(self):
-        print('OUCH!')
-        return 'has been hit'
+
