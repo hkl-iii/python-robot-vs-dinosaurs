@@ -2,6 +2,8 @@ from dinosaur import Dinosaur
 
 
 class Herd:
+    health = Dinosaur().health
+
     def __init__(self):
         dinosaur_1 = Dinosaur()
         dinosaur_1.type = 'Indominus-Rex'

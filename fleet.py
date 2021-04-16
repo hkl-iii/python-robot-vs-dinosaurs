@@ -3,6 +3,8 @@ from robot import Robot
 
 class Fleet:
 
+    health = Robot().health
+
     def __init__(self):
         robot_1 = Robot()
         robot_1.name = 'R-800'
