@@ -4,7 +4,9 @@ class Robot:
         self.health = ''
         self.power_level = ''
         self.weapon = ''
-        self.weapon.attack_power = ''
 
 
-
+class Weapon:
+    def __init__(self):
+        self.type = ''
+        self.attack_power = ''
