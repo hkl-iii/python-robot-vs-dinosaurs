@@ -5,9 +5,11 @@ class Dinosaur:
         self.energy = ''
         self.attack_power = ''
 
-    def attack(self, player_loses_health_pts):
-        player_loses_health_pts.attack = self.receive_attack()
+    def attack(self, robot):
+        robot.health -= self.attack_power
+        self.energy -= self.attack_power
+        print(self.name + ' attacked ' + robot.name)
 
-    def receive_attack(self):
-        print('OUCH!')
-        return 'has been hit'
+
+
+
