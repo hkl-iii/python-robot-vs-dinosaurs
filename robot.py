@@ -1,5 +1,4 @@
-from armory import Armory
-
+import weapon
 
 
 class Robot:
@@ -7,11 +6,9 @@ class Robot:
         self.name = ''
         self.health = ''
         self.power_level = ''
-        self.weapon = Armory.Weapon()
+        self.weapon = weapon.Weapon()
 
     def attack_with_weapon(self, dinosaur):
         dinosaur.health -= self.weapon.attack_power
         self.power_level -= 10
         print(self.name + ' shot ' + dinosaur.name)
-
-

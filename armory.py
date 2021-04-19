@@ -15,3 +15,5 @@ class Armory:
         weapon_3 = Weapon()
         weapon_3.type = 'shotti'
         weapon_3.attack_power = 33
+
+
